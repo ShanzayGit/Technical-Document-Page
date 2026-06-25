@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet"href="./styles.css">
+  </head>
+
+  <body>
+          <nav id="navbar">
+        <header>Basics of HTML</header>
+        <a class="nav-link"href="#Introduction_to_HTML">Introduction to HTML</a>
+        <a class="nav-link"href="#Basic_HTML_Document_Structure">Basic HTML Document Structure</a>
+        <a class="nav-link"href="#HTML_Elements_and_Tags">HTML Elements and Tags</a>
+        <a class="nav-link"href="#Text_and_Heading_Elements">Text and Heading Elements</a>
+        <a class="nav-link" href="#Lists_in_HTML">Lists in HTML</a>
+        <a class="nav-link" href="#HTML_Forms_and_Input_Elements">HTML Forms and Input Elements</a>
+        
+      </nav>
+     <main id="main-doc">
+      <h1>Basics of HTML</h1>
+      <section id="Introduction_to_HTML" class="main-section">
+        <header>
+           Introduction to HTML        </header>
+
+           <p>HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It forms the backbone of every webpage and works alongside CSS and JavaScript to build complete web experiences.</p>
+           <p>HTML describes the structure of a web page using a series of ,<span>elements</span>, represented by <span>tags</span>. Browsers read these tags and render them as visible content.</p>
+           <h3>Key Facts About HTML</h3>
+           <ul>
+            <li>First developed by Tim Berners-Lee in 1991</li>
+            <li>Current standard is HTML5 (maintained by WHATWG)</li>
+            <li>Files use the .html or .htm extension</li>
+            <li>HTML is not a programming language  it is a markup language</li>
+            <li>Works on all browsers and operating systems</li>
+          </ul>
+      </section>
+      <section id="Basic_HTML_Document_Structure" class="main-section">
+        <header>
+          Basic HTML Document Structure</header>
+
+          <p>Every HTML document follows a standard structure. This structure tells the browser how to interpret and display the content.</p>
+        <p class="bold">Code Example</p>
+
+<pre>
+  <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;Welcome to my first HTML page.&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  </code>
+</pre>
+<h3>Structure Breakdown</h3>
+      <ul>
+        <li><span class="code">&lt;!DOCTYPE html&gt;</span>  Declares the document as HTML5</li>
+        <li><span class="code">&lt;html&gt;</span> The root element that wraps all conten</li>
+        <li><span class="code">&lt;head&gt;</span> Contains metadata (not visible on the page)</li>
+        <li><span class="code">&lt;title&gt;</span>  Sets the browser tab title</li>
+        <li><span class="code">&lt;body&gt;</span> Contains all visible page content</li>
+
+      </ul>
+      </section>
+      <section id="HTML_Elements_and_Tags" class="main-section">
+        <header>
+          HTML Elements and Tags</header>
+
+          <p>An HTML element consists of an opening tag, content, and a closing tag. Some elements are self-closing and don't need a closing tag.</p>
+        <p class="bold">Code Example</p>
+
+<pre><code>
+&lt;!-- Standard element --&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;!-- Self-closing elements --&gt;
+&lt;img src="image.jpg" alt="A sample image" /&gt;
+&lt;br /&gt;
+&lt;input type="text" placeholder="Enter name" /&gt;
+</code></pre>
+        <h3>Tags Attributes</h3>
+        <p>Tags can also carry attributes that provide additional information. For example:</p>
+        <ul>
+          <li>src specifies the source of an image</li>
+          <li>href specifies the URL of a link</li>
+          <li>class and id are used for styling and scripting</li>
+          <li>alt provides alternative text for accessibility</li>
+        </ul>
+      </section>
+
+      <section id="Text_and_Heading_Elements" class="main-section">
+        <header>
+          Text and Heading Elements</header>
+
+          <p>HTML provides six levels of headings (<span class="code">&lt;h1&gt;</span> through <span class="code">&lt;h6&gt;</span>) and several tags for formatting text content.</p>
+          <p class="bold">Code Example</p>
+
+<pre><code>
+&lt;h1&gt;Main Page Title&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Sub-section Heading&lt;/h3&gt;
+
+&lt;p&gt;This is a regular paragraph of text.&lt;/p&gt;
+&lt;p&gt;This text has a &lt;strong&gt;bold word&lt;/strong&gt; and an &lt;em&gt;italic word&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Visit &lt;a href="https://example.com"&gt;this link&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;blockquote&gt;This is a blockquote for long quotes or references.&lt;/blockquote&gt;
+</code></pre>
+        <h3>Common text elements and their purpose:</h3>
+        <ul>
+          <li><span class="code">&lt;h1&gt;</span> to <span class="code">&lt;h6&gt;</span> Headings from most to least important</li>
+          <li><span class="code">&lt;p&gt;</span> Paragraph of body text</li>
+          <li><span class="code">&lt;strong&gt;</span> Bold text (semantic importance</li>
+          <li><span class="code">&lt;em&gt;</span> Italic text (emphasis)</li>
+          <li><span class="code">&lt;a&gt;</span> Hyperlink to another page or resource</li>
+          <li><span class="code">&lt;br&gt;</span> Line break within text</li>
+          <li><span class="code">&lt;blockquote&gt;</span> Indented quotation block</li>
+        </ul>
+      </section>
+      <section id="Lists_in_HTML" class="main-section">
+        <header>
+          Lists in HTML</header>
+
+          <p>HTML supports three types of lists: unordered, ordered, and definition lists. Lists are used for navigation menus, feature lists, steps, and more.</p>
+        <p class="bold">Code Example</p>
+
+        <pre><code>
+&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered List --&gt;
+&lt;ol&gt;
+  &lt;li&gt;Open your code editor&lt;/li&gt;
+  &lt;li&gt;Create a new file&lt;/li&gt;
+  &lt;li&gt;Save it as index.html&lt;/li&gt;
+  &lt;li&gt;Write your HTML&lt;/li&gt;
+  &lt;li&gt;Open it in a browser&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+        <h3>Types of HTML lists:</h3>
+        <ul>
+          <li><span class="code">&lt;ul&gt;</span> Unordered list (bullet points)</li>
+          <li><span class="code">&lt;ol&gt;</span> Ordered list (numbered)</li>
+          <li><span class="code">&lt;dl&gt;</span> Definition list (term + description pairs)</li>
+          <li><span class="code">&lt;li&gt;</span> Individual list item (used in <span class="code">&lt;ul&gt;</span>; and <span class="code">&lt;ol&gt;</span>)</li>
+          <li><span class="code">&lt;dt&gt;</span> / <span class="code">&lt;dd&gt;</span> Definition term and description (used in <span class="code">&lt;dl&gt;</span>)</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Forms_and_Input_Elements">
+        <header>
+          HTML Forms and Input Elements        </header>
+
+          <p>Forms allow users to input and submit data. They are essential for login pages, search bars, contact forms and more.</p>
+        <p class="bold">Code Example</p>
+        <pre><code>
+&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" placeholder="John Doe" required /&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" placeholder="you@example.com" /&gt;
+
+  &lt;label for="role"&gt;Role:&lt;/label&gt;
+  &lt;select id="role" name="role"&gt;
+    &lt;option value="dev"&gt;Developer&lt;/option&gt;
+    &lt;option value="design"&gt;Designer&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+        <h3>Commonly used form input types:</h3>
+        <ul>
+          <li><span class="code">text</span>  Single-line text input</li>
+          <li><span class="code">email</span>  Email address input with basic validation</li>
+          <li><span class="code">password</span>  Masked text input for passwords</li>
+          <li><span class="code">checkbox</span> / <span class="code">radio</span>  Boolean or single-choice options</li>
+          <li><span class="code">submit</span>  Button that sends the form data</li>
+        </ul>
+      </section>
+
+     </main>
+     
+  </body>
+</html>
