@@ -16,7 +16,7 @@ position:static;
    color:black;
    padding:10px;
    margin:10px;
-  display:inline-block;
+  display:block;
 }
 
 .nav-link:hover{
